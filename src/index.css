@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+@plugin "daisyui/theme" {
+  name: "forest";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(14% 0.004 49.25);
+  --color-base-200: oklch(0.2589 0.0087 255.58);
+  --color-base-300: oklch(0.8001 0.0221 252.53);
+  --color-base-content: oklch(1 0 0);
+  --color-primary: oklch(0.6345 0.2537 17.12);
+  --color-primary-content: oklch(1 0 0);
+  --color-secondary: oklch(0.223 0.0085 264.38);
+  --color-secondary-content: oklch(13% 0.028 261.692);
+  --color-accent: oklch(0.2336 0.0089 255.6);
+  --color-accent-content: oklch(29% 0.149 302.717);
+  --color-neutral: oklch(0.2589 0.0087 255.58);
+  --color-neutral-content: oklch(98% 0.001 106.423);
+  --color-info: oklch(0.2213 0.0066 258.37);
+  --color-info-content: oklch(97% 0.014 254.604);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(98% 0.018 155.826);
+  --color-warning: oklch(70% 0.213 47.604);
+  --color-warning-content: oklch(98% 0.016 73.684);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(97% 0.013 17.38);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 1;
+}
