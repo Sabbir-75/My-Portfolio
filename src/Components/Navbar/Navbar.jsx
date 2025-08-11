@@ -1,39 +1,64 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { Home, Settings, Bell, User, Menu } from "lucide-react";
+import { FaCode } from "react-icons/fa";
+import {
+    Home,
+    Info,
+    GraduationCap,
+    FolderKanban,
+    Mail
+} from "lucide-react";
+import Button from '../Button/Button';
+
 
 const menuItems = [
     {
         icon: <Home className="h-5 w-5" />,
         label: "Home",
         href: "#",
-        gradient:
-            "radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.06) 50%, rgba(29,78,216,0) 100%)",
-        iconColor: "group-hover:text-blue-500 dark:group-hover:text-blue-400",
+        gradient: "radial-gradient(circle, rgba(255,1,79,0.15) 0%, rgba(255,1,79,0.06) 50%, rgba(255,1,79,0) 100%)",
+        iconColor: "group-hover:text-[#ff014f]",
+
     },
     {
-        icon: <Bell className="h-5 w-5" />,
-        label: "Notifications",
+        icon: <Info className="h-5 w-5" />,
+        label: "About",
         href: "#",
-        gradient:
-            "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
-        iconColor: "group-hover:text-orange-500 dark:group-hover:text-orange-400",
+        gradient: "radial-gradient(circle, rgba(255,1,79,0.15) 0%, rgba(255,1,79,0.06) 50%, rgba(255,1,79,0) 100%)",
+        iconColor: "group-hover:text-[#ff014f]",
+
     },
     {
-        icon: <Settings className="h-5 w-5" />,
-        label: "Settings",
+        icon: <FaCode className="h-5 w-5" />,
+        label: "Skills",
         href: "#",
-        gradient:
-            "radial-gradient(circle, rgba(34,197,94,0.15) 0%, rgba(22,163,74,0.06) 50%, rgba(21,128,61,0) 100%)",
-        iconColor: "group-hover:text-green-500 dark:group-hover:text-green-400",
+        gradient: "radial-gradient(circle, rgba(255,1,79,0.15) 0%, rgba(255,1,79,0.06) 50%, rgba(255,1,79,0) 100%)",
+        iconColor: "group-hover:text-[#ff014f]",
+
     },
     {
-        icon: <User className="h-5 w-5" />,
-        label: "Profile",
+        icon: <GraduationCap className="h-5 w-5" />,
+        label: "Education",
         href: "#",
-        gradient:
-            "radial-gradient(circle, rgba(239,68,68,0.15) 0%, rgba(220,38,38,0.06) 50%, rgba(185,28,28,0) 100%)",
-        iconColor: "group-hover:text-red-500 dark:group-hover:text-red-400",
+        gradient: "radial-gradient(circle, rgba(255,1,79,0.15) 0%, rgba(255,1,79,0.06) 50%, rgba(255,1,79,0) 100%)",
+        iconColor: "group-hover:text-[#ff014f]",
+
+    },
+    {
+        icon: <FolderKanban className="h-5 w-5" />,
+        label: "Projects",
+        href: "#",
+        gradient: "radial-gradient(circle, rgba(255,1,79,0.15) 0%, rgba(255,1,79,0.06) 50%, rgba(255,1,79,0) 100%)",
+        iconColor: "group-hover:text-[#ff014f]",
+
+    },
+    {
+        icon: <Mail className="h-5 w-5" />,
+        label: "Contact",
+        href: "#",
+        gradient: "radial-gradient(circle, rgba(255,1,79,0.15) 0%, rgba(255,1,79,0.06) 50%, rgba(255,1,79,0) 100%)",
+        iconColor: "group-hover:text-[#ff014f]",
+
     },
 ];
 const itemVariants = {
@@ -152,7 +177,7 @@ const Navbar = () => {
         ))}
     </>
     return (
-        <div className="navbar shadow-sm">
+        <div className="navbar shadow-sm py-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -172,7 +197,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Button></Button>
             </div>
         </div>
     );

@@ -32,7 +32,7 @@ export default function SpotlightCard() {
                 }}
             >
                 { }
-                <div className="relative text-center z-10 px-8 py-12 rounded-2xl w-full bg-[linear-gradient(90deg,rgba(25,27,31,1)_0%,rgba(27,30,34,1)_50%,rgba(33,36,40,1)_100%)] h-full mx-auto">
+                <div className="relative text-center z-10 px-8 py-12 rounded-2xl w-full bg-gradient-to-br from-[#1c1e22] to-[#22262a] h-full mx-auto">
                     { }
                     <h1 className="text-2xl font-bold tracking-tight text-black dark:text-white">
                         Sign In
