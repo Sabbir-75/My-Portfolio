@@ -216,12 +216,12 @@ export default function OrbitingSkills({image}) {
 
             { }
             <div className="w-70 h-70 rounded-full flex items-center justify-center z-10 relative shadow-2xl">
-                <div className="absolute inset-0 rounded-full bg-cyan-500/30 blur-xl animate-pulse"></div>
-                <div className="absolute inset-0 rounded-full bg-purple-500/20 blur-2xl animate-pulse" style={{
+                <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl animate-pulse"></div>
+                <div className="absolute inset-0 rounded-full bg-primary/10 blur-2xl animate-pulse" style={{
                     animationDelay: '1s'
                 }}></div>
 
-                <div className="relative z-10 w-70 h-70 rounded-full overflow-hidden shadow-xl border-4 border-cyan-400">
+                <div className="relative z-10 w-70 h-70 rounded-full overflow-hidden shadow-xl border-4 border-primary/40">
                     <img
                         src={image} 
                         alt={image}
