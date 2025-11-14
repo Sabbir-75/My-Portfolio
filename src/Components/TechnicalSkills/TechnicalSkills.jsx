@@ -1,5 +1,6 @@
 // components/TechnicalSkills.jsx
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaGithub, FaFigma } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript } from "react-icons/si";
 import { SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiFirebase, SiJsonwebtokens, SiVercel, } from "react-icons/si";
 import vscode from "../../assets/png-transparent-visual-studio-code-hd-logo-removebg-preview.png"
 import SpotlightCard from "../New/New";
@@ -7,25 +8,40 @@ import SpotlightCard from "../New/New";
 
 const skills = {
     frontend: [
-        { icon: <FaReact size={30} color="#61DAFB" />, name: "React" },
-        { icon: <SiJavascript size={30} color="#F7DF1E" />, name: "JavaScript" },
-        { icon: <FaHtml5 size={30} color="#E34F26" />, name: "HTML" },
-        { icon: <FaCss3Alt size={30} color="#1572B6" />, name: "CSS" },
-        { icon: <SiTailwindcss size={30} color="#38BDF8" />, name: "Tailwind" },
+        { icon: <FaReact size={35} color="#61DAFB" />, name: "React" },
+        {
+        icon: (
+            <div className="w-10 h-10 rounded-full flex items-center justify-center bg-black rounded">
+                <SiNextdotjs size={37} color="white" />
+            </div>
+        ),
+        name: "Next.js",
+    },
+        { icon: <SiJavascript size={34} color="#F7DF1E" />, name: "JavaScript" },
+        
+    {
+        icon: (
+            <div className="w-8 h-8 rounded-sm flex items-center justify-center bg-white rounded border border-gray-300">
+                <SiTypescript size={29} color="#3178C6" />
+            </div>
+        ),
+        name: "TypeScript",
+    },
+        { icon: <SiTailwindcss size={35} color="#38BDF8" />, name: "Tailwind" },
 
     ],
     backend: [
-        { icon: <SiMongodb size={30} color="#4DB33D" />, name: "MongoDB" },
-        { icon: <FaNodeJs size={30} color="#68A063" />, name: "Node.js" },
-        { icon: <SiExpress size={30} color="#FFFFFF" />, name: "Express" },
-        { icon: <SiFirebase size={30} color="#FFCA28" />, name: "Firebase" },
-        { icon: <SiJsonwebtokens size={30} color="#F50057" />, name: "JWT" },
+        { icon: <SiMongodb size={37} color="#4DB33D" />, name: "MongoDB" },
+        { icon: <FaNodeJs size={34} color="#68A063" />, name: "Node.js" },
+        { icon: <SiExpress size={34} color="#FFFFFF" />, name: "Express" },
+        { icon: <SiFirebase size={34} color="#FFCA28" />, name: "Firebase" },
+        { icon: <SiJsonwebtokens size={34} color="#F50057" />, name: "JWT" },
     ],
     tools: [
-        { icon: <FaGitAlt size={30} color="#F05032" />, name: "Git" },
-        { icon: <FaGithub size={30} color="#FFFFFF" />, name: "Github" },
-        { icon: <SiVercel size={30} color="#FFFFFF" />, name: "Vercel" },
-        { icon: <FaFigma size={30} color="#F24E1E" />, name: "Figma" },
+        { icon: <FaGitAlt size={34} color="#F05032" />, name: "Git" },
+        { icon: <FaGithub size={34} color="#FFFFFF" />, name: "Github" },
+        { icon: <SiVercel size={34} color="#FFFFFF" />, name: "Vercel" },
+        { icon: <FaFigma size={34} color="#F24E1E" />, name: "Figma" },
     ],
 };
 

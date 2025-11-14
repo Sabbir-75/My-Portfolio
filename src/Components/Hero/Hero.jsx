@@ -4,7 +4,6 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import image from '../../assets/Black Simple Minimalist Professional Corporate Facebook Profile Picture.png'
-
 import Button2 from "../Button2/Button2";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -15,7 +14,6 @@ const DotIcon = () => <svg width="8" height="8" className="text-red-500" viewBox
 const CoderProfileCard = () => {
     return (
         <div>
-            {/* <img src={image}/> */}
             <OrbitingSkills image={image}></OrbitingSkills>
         </div>
     );
@@ -70,7 +68,7 @@ const Portfolio = () => {
 
 
                     <p className="text-gray-300 text-sm sm:text-lg lg:text-xl max-w-lg leading-relaxed">
-                        Skilled in React, MongoDB, Express.js and Node.js — I craft high-performance, secure, and scalable full-stack applications tailored for exceptional user experiences.
+                        Skilled in React, Next.js, MongoDB, Express.js and Node.js — I craft high-performance, secure, and scalable full-stack applications tailored for exceptional user experiences.
                     </p>
                     <div className="flex gap-3 md:gap-6 justify-between">
                         <div>

@@ -20,7 +20,7 @@ export default function ContactWithMe() {
                             alt="Profile"
                             className="w-full h-40 rounded-2xl object-cover shadow-md mb-6"
                         />
-                        <h2 className="text-2xl font-bold text-white">Sabbir Ahmed</h2>
+                        <h2 className="text-2xl font-bold text-white">Md. Sabbir Hossain</h2>
                         <p className="text-gray-200 font-medium mb-4">Frontend Web Developer</p>
                         <p className="text-gray-400 mb-6">
                             I’m passionate about building clean, user-friendly, and high-performance web applications that solve real-world problems.

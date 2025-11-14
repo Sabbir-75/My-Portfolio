@@ -22,7 +22,7 @@ const educationData = [
         location: 'Dhaka, Road, Jhenaidah 7300',
         duration: '2019 - 2023',
         details: [
-            { label: 'CGPA', value: '3.77 out of 4.00' },
+            { label: 'CGPA', value: '3.77 / 4.00' },
             { label: 'Department', value: 'CSE' }
         ]
     },
@@ -33,7 +33,7 @@ const educationData = [
         location: 'Baragangdia, Daulatpur, Kushtia',
         duration: '2017 - 2018',
         details: [
-            { label: 'GPA', value: '4.61 out of 5.00' },
+            { label: 'GPA', value: '4.61 / 5.00' },
             { label: 'Group', value: 'SCIENCE' }
         ]
     },
@@ -42,13 +42,15 @@ const educationData = [
 const EducationCard = ({ edu }) => (
     <div className="text-white">
         <div className="flex items-start gap-4">
-            <img src={edu.logo} alt={edu.institute} className="w-24 h-24 bg-white object-contain border border-pink-500 rounded-md" />
+            <img src={edu.logo} alt={edu.institute} className="w-20 h-20 bg-white object-contain border border-pink-500 rounded-md" />
             <div className='text-start'>
                 <h3 className="font-bold text-lg">{edu.degree}</h3>
                 <p className="text-base font-medium text-white">{edu.institute}</p>
                 <p className="text-sm mb-2 text-gray-200">{edu.location}</p>
-                <span className="inline-block mt-1 px-2 py-1  font-medium text-xs bg-purple-600 text-white rounded">{edu.duration}</span>
             </div>
+        </div>
+        <div className='flex justify-start -mt-2'>
+            <span className="inline-block mt-1 px-2 py-1  font-medium text-xs bg-purple-600 text-white rounded">{edu.duration}</span>
         </div>
         <div className="flex flex-wrap gap-4 mt-4">
             {edu.details.map((detail, idx) => (
