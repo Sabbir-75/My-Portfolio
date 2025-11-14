@@ -28,7 +28,10 @@ export default function ContactWithMe() {
 
                         <div className="w-full text-left space-y-4">
                             <div className="flex items-center gap-3">
-                                <Mail className="text-primary" />
+                                <div className="w-12">
+                                    <Mail className="text-primary" />
+                                </div>
+
                                 <a href="mailto:youremail@example.com" className="text-white hover:underline">
                                     mdsabbirhossain9200@gmail.com
                                 </a>

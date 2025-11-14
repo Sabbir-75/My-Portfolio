@@ -49,7 +49,7 @@ const EducationCard = ({ edu }) => (
                 <p className="text-sm mb-2 text-gray-200">{edu.location}</p>
             </div>
         </div>
-        <div className='flex justify-start -mt-2'>
+        <div className='flex justify-start md:-mt-2'>
             <span className="inline-block mt-1 px-2 py-1  font-medium text-xs bg-purple-600 text-white rounded">{edu.duration}</span>
         </div>
         <div className="flex flex-wrap gap-4 mt-4">
@@ -71,7 +71,7 @@ const EducationQualification = () => (
             <p className="text-center text-gray-400 mb-8">
                 Establishing a strong and enduring base in Computer Science and Engineering.
             </p>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 {educationData.map((edu, idx) => (
 
                     <SpotlightCard>

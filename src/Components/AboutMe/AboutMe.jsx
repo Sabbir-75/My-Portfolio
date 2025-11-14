@@ -38,7 +38,7 @@ export default function AboutMe() {
                     </p>
 
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pb-4 mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4 mt-6">
 
                         <Base icon={<FaMapMarkerAlt className="mx-auto text-primary" size={24} />} txt={"Based in"}>Bangladesh</Base>
 
@@ -49,7 +49,7 @@ export default function AboutMe() {
 
                       <GlowLine></GlowLine>
 
-                    <div className=" pt-3 grid grid-cols-1 sm:grid-cols-3 text-center">
+                    <div className=" pt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center">
                         <div>
                             <h3 className="text-2xl font-bold">2+</h3>
                             <p className="text-gray-400">Self-taught & Project-based</p>

@@ -212,16 +212,16 @@ export default function OrbitingSkills({image}) {
             }} />
         </div>
 
-        <div className="relative w-[calc(100vw-40px)] h-[calc(100vw-40px)] md:w-[450px] md:h-[450px] flex items-center justify-center" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
+        <div className="relative w-[calc(100vw-60px)] h-[calc(100vw-60px)] md:w-[450px] md:h-[450px] flex items-center justify-center" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)}>
 
             { }
-            <div className="w-70 h-70 rounded-full flex items-center justify-center z-10 relative shadow-2xl">
+            <div className="w-35 h-35 md:w-70 md:h-70 rounded-full flex items-center justify-center z-10 relative shadow-2xl">
                 <div className="absolute inset-0 rounded-full bg-primary/30 blur-xl animate-pulse"></div>
                 <div className="absolute inset-0 rounded-full bg-primary/10 blur-2xl animate-pulse" style={{
                     animationDelay: '1s'
                 }}></div>
 
-                <div className="relative z-10 w-70 h-70 rounded-full overflow-hidden shadow-xl border-4 border-primary/40">
+                <div className="relative z-10 w-35 h-35 md:w-70 md:h-70 rounded-full overflow-hidden shadow-xl border-4 border-primary/40">
                     <img
                         src={image} 
                         alt={image}

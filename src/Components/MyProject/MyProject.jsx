@@ -8,28 +8,31 @@ import { Link } from 'lucide-react';
 
 const projects = [
     {
+        title: "EduSmart",
+        type: "Team Project",
+        description: "EduSmart is a School Management System that digitalizes school operations for all users.",
+        image: "https://i.ibb.co.com/zHSS96Sq/Screenshot-1.png",
+        skills: ["Next.js", "React", "MongoDB", "Stripe", "Firebase", "Node.js" ],
+        liveDemo: "https://edu-smart-application.vercel.app/",
+        clientCode: "https://github.com/MUSHUBO/EduSmart-Application"
+    },
+    {
         title: "Wanderix",
-        description: "Wanderix is a modern tourist management system designed to simplify travel planning, booking, and guide services for travelers.",
+        type: "Personal Project",
+        description: "Wanderix is a modern system that simplifies travel planning, bookings, and guide services.",
         image: "https://i.ibb.co.com/vvmVsdZP/Screenshot-50.png",
-        skills: ["React", "JavaScript", "MongoDB", "Stripe", "Tailwind", "Node.js", "Express", "Firebase"],
+        skills: ["React", "MongoDB", "Stripe", "Node.js", "Firebase"],
         liveDemo: "https://wanderix.netlify.app/",
         clientCode: "https://github.com/Sabbir-75/Wanderix"
     },
     {
         title: "Study Sync",
+        type: "Personal Project",
         description: "Study Sync is an online platform for collaborative learning, group study, and exam preparation.",
         image: "https://i.ibb.co.com/pjD81h5q/Screenshot-47.png",
-        skills: ["React", "JavaScript", "MongoDB", "Stripe", "Tailwind", "Node.js", "Express", "Firebase"],
+        skills: ["React", "MongoDB", "Stripe", "Node.js", "Firebase"],
         liveDemo: "https://my-studysync.netlify.app/",
         clientCode: "https://github.com/Sabbir-75/study-sync"
-    },
-    {
-        title: "Roommate Finder",
-        description: "RoomMateMatch is a smart and user-friendly roommate finder platform designed to simplify the search for compatible housemates.",
-        image: "https://i.ibb.co.com/spvqks91/Screenshot-49.png",
-        skills: ["React", "Node.js", "MongoDB", "Tailwind", "Firebase", "JavaScript"],
-        liveDemo: "https://roommate-hunt.netlify.app/",
-        clientCode: "https://github.com/Sabbir-75/Roommate-Finder"
     }
 ];
 
@@ -42,15 +45,20 @@ const MyProject = () => {
                     A selection of my recent work demonstrating my skills in web development, full-stack projects, and UI/UX design.
                 </p>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {projects.map((project, idx) => (
                         <div key={idx} className="bg-gradient-to-br from-[#1c1e22] to-[#22262a] 
                 hover:from-[#22262a] hover:to-[#1c1e22] 
                 transition-colors duration-300 rounded-xl shadow-lg overflow-hidden flex flex-col">
-                            <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
+                            <img src={project.image} alt={project.title} className="h-full lg:h-48 w-full object-cover" />
                             <div className="p-5 flex flex-col flex-1">
-                                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                                <p className="text-gray-300 mb-4 flex-1">{project.description}</p>
+                                <div className='flex item-center text-primary gap-3'>
+ <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+ <FaArrowRightLong size={25} />
+ <h3 className="text-xl font-semibold mb-2">{project.type}</h3>
+                                </div>
+                               
+                                <p className="text-gray-300 text-start mb-4 flex-1">{project.description}</p>
 
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.skills.map((skill, i) => (

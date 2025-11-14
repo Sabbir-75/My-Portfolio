@@ -40,10 +40,10 @@ const Portfolio = () => {
 
         return () => typed.destroy();
     }, []);
-    return <div className=" w-full relative flex items-center justify-center font-sans p-4 sm:p-6 lg:p-8">
+    return <div className="w-full relative flex items-center justify-center font-sans p-4 sm:p-6 lg:p-8">
 
         { }
-        <div className="container mx-auto max-w-7xl relative z-10">
+        <div className=" mx-auto max-w-7xl relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 xl:gap-12 items-center">
 
                 { }

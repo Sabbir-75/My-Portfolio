@@ -8,7 +8,7 @@ const NeonBadge = ({
     ...props
 }) => {
     const colors = {
-        green: "shadow-green-500/30 border-green-400/30 text-green-300",
+        pink: "shadow-[#FB2859]/30 border-[#FB2859]/30 text-[#FFFFFF]/90",
         
     };
     return (
@@ -24,7 +24,7 @@ const NeonBadge = ({
 export default function NeonBadgeView({children}) {
     return (
             <div>
-                <NeonBadge color="green">{children}</NeonBadge>
+                <NeonBadge color="pink">{children}</NeonBadge>
             </div>
     );
 }
