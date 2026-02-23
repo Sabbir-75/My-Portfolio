@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import SpotlightCard from '../Components/New/New';
 import Portfolio from '../Components/Hero/Hero';
 import Skills from '../Components/Skills/Skills';
 import AboutMe from '../Components/AboutMe/AboutMe';

@@ -28,7 +28,7 @@ export default function ContactWithMe() {
 
                         <div className="w-full text-left space-y-4">
                             <div className="flex items-center gap-3">
-                                <div className="w-12">
+                                <div className="w-7">
                                     <Mail className="text-primary" />
                                 </div>
 
