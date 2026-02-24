@@ -40,7 +40,7 @@ export default function AboutMe() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4 mt-6">
 
-                        <Base icon={<FaMapMarkerAlt className="mx-auto text-primary" size={24} />} txt={"Based in"}>Bangladesh</Base>
+                        <Base icon={<FaMapMarkerAlt className="mx-auto text-primary" size={24} />} txt={"Based in"}>Dhaka, Bangladesh</Base>
 
                         <Base icon={<FaGift className="mx-auto text-primary" size={24} />} txt={"Self-taught & Project-based"}>2+ Years</Base>
 
