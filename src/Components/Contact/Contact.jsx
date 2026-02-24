@@ -44,7 +44,7 @@ export default function ContactWithMe() {
                             </div>
                             <div className="flex items-center gap-3">
                                 <MapPin className="text-primary" />
-                                <span className="text-white">Khulna, Bangladesh</span>
+                                <span className="text-white">Dhaka, Bangladesh</span>
                             </div>
                         </div>
                     </div>
