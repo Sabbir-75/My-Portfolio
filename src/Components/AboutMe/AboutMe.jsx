@@ -29,10 +29,10 @@ export default function AboutMe() {
                     </div>
 
                     <p className="mt-6 text-start text-gray-300 leading-relaxed">
-                        As a frontend developer with over a year of hands-on experience, I specialize in crafting functional and visually engaging web applications. My journey into tech began with curiosity and quickly grew into a genuine passion for solving real-world problems through clean, efficient, and user-focused code.
+                        As a Frontend Developer with over a year of hands-on experience, I design and build intuitive, high-performing web applications that blend functionality with thoughtful aesthetics. What began as simple curiosity soon evolved into a deep commitment to engineering meaningful digital experiences through clean architecture and user-centered design.
                     </p>
                     <p className="mt-4 text-start text-gray-300 leading-relaxed">
-                        Beyond coding, I’m deeply passionate about exploring emerging technologies, experimenting with new tools, and staying ahead in the fast-evolving tech landscape. I love contributing to open-source projects, engaging with the developer community, and exchanging ideas that inspire growth. For me, continuous learning and meaningful collaboration are the keys to building impactful solutions.
+                        I’m driven by the challenge of transforming complex ideas into seamless interfaces that feel effortless to use. Writing maintainable, scalable, and purposeful code is not just a task for me — it’s a craft I continuously refine. Beyond development, I actively explore emerging technologies, experiment with modern tools, and stay aligned with the ever-evolving tech ecosystem. I value collaboration, knowledge-sharing, and contributing to initiatives that foster innovation within the developer community.
 
 
                     </p>
