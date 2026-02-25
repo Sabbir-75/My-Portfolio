@@ -26,7 +26,10 @@ const Portfolio = () => {
             strings: [
                 "Frontend Web Developer _",
                 "Problem Solver _",
-                "Programmer _"
+                "React Developer _",
+                "JavaScript Developer _",
+                "Clean Code Lover _",
+                "Future Software Engineer _"
             ],
             typeSpeed: 60,
             backSpeed: 40,
